@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,1,200" />
+<style>
+* {
+    font-family: 'TitilliumWeb';
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    display: flex;
+    height: 137px;
+    background-color: #141B4D;
+    border: #A7AABC;
+    border-style: solid;
+    border-width: 1px;
+}
+.topnav {
+    display: flex;
+    align-items: center;
+    height: 137px;
+    padding: 0px 42px 0px 42px;
+    width: 1440px;
+    margin: 0 auto;
+}
+.topnav img {
+    height: 55px;
+    width: 151px;
+    justify-content: flex-start;
+}
+.search {
+    display: flex;
+    background-color: #E2E3E9;
+    height: 49px;
+    width: 500px;
+    border-radius: 15px;
+    margin: 0 auto;
+    color: #141B4D;
+    font-family: 'TitilliumWeb';
+}
+.icon {
+    display: flex;
+    justify-content: flex-end;
+}
+.profile {
+    height: 41px;
+    width: 42px;
+    border-radius: 100%;
+    margin: 12.5px 12.5px;
+    background-color: #E2E3E9;
+}
+.material-symbols-outlined{
+    color: #E2E3E9;
+    font-size: 38px;
+    padding: 12.5px 12.5px;
+}
+.banner{
+    display: flex;
+    height: 457px;
+    background-color: #141B4D;
+    border: #A7AABC;
+    border-style: solid;
+    border-width: 1px;
+}
+.container{
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    width: 821px;
+    color: #FFF;
+    font-family: 'TitilliumWeb';
+}
+.container h3{
+    margin: 0px;
+}
+.container img{
+    height: 189px;
+    width: 261px;
+}
+.container button {
+    background-color: #313863; /* Green */
+    border: none;
+    color: white;
+    height: 63px;
+    width: 158px;
+    border-radius: 15px;
+    padding: 15px 32px;
+    margin-top: 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'TitilliumWeb';
+    font-weight: bold;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container button:hover {
+    cursor:pointer;
+}
+.main {
+    display: flex;
+    justify-content: center;
+}
+.leftsidebar {
+    display: block;
+    justify-content: flex-end;
+    margin-right: 5px;
+}
+.leftsidebar a {
+    display: block;
+    font-size: 22px;
+    margin: 20px;
+}
+.leftsidebar a:hover {
+    cursor: pointer;
+    color: #141B4D;
+    font-weight: bold;
+}
+.main-content {
+    margin-top: 20px;
+    width: 716px;
+    height: 100%;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+.main-content h2{
+    margin: 0px;
+}
+.main-content h3{
+    margin: 0px;
+    margin-top: 5px;
+    font-weight: normal;
+}
+.rightsidebar {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 195px;
+    height: 225px;
+    background-color: #000000;
+    border-radius: 10px;
+    padding-top: 1px;
+}
+.rightsidebar h1 {
+    color: #FFF;
+}
+.rightsidebar h3 {
+    color: #A580EA;
+    margin-bottom: 5px;
+}
+.rightsidebar button {
+    width: 145px;
+    height: 46px;
+    border-radius: 20px;
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #A580EA;
+    color: #FFF;
+}
+.rightsidebar button:hover {
+    cursor: pointer;
+}
+.dday h1 {
+    color: #A580EA;
+    margin: 0px;
+}
+.part {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 99px;
+    border-radius: 5px;
+    background-color: #F8F8F9;
+    border: #A7AABC;
+    border-style: solid;
+    border-width: 1px;
+}
+.part img {
+    width: 90px;
+    height: 46px;
+}
+.submenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+.submenu h3 {
+    font-weight: normal;
+    margin: 0px;
+}
+.filter {
+}
+.more {
+    border: #8A8DA6;
+    text-align: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 5px;
+    height: 19px;
+    width: 64px;
+}
+.more:hover{
+    cursor: pointer;
+}
+.more p {
+    margin: 0px;
+}
+.feed1 {
+    width: 225px;
+    height: 330px;
+    border: #C4C6D3;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-right: 17px;
+    margin-top: 10px;
+}
+.feed1 h2 {
+    font-weight: normal;
+}
+.feed1 p {
+    margin: 0px;
+    margin-right: 3px;
+}
+.feed1 img {
+    width: 226px;
+    height: 226px;
+}
+.trust {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #A580EA;
+}
+.trust img {
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+    color: #A580EA;
+}
+.trusticon {
+    color: #A580EA;
+    font-size: 19px;
+    margin: 0px;
+    margin-right: 2px;
+    padding: 0px;
+}
+.feedsearch {
+    color: #8A8DA6;
+    font-size: 25px;
+    margin: 0px;
+    margin-right: 2px;
+    padding: 0px;
+    margin-left: 30px;
+}
+.text {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.job {
+    display: flex;
+}
+.feed-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.feedbox {
+    display: flex;
+}
+.jobbox{
+    margin-bottom: 40px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #141B4D;
+    width: 100%;
+    height: 235px;
+}
+.footer p {
+    margin: 0px;
+    color: #fff;
+    font-weight: lighter;
+}
+.footer img {
+    margin: 80px;
+}
+</style>
+</head>
+<body>
+<!-- header -->
+<div class="header">
+    <div class="topnav">
+            <a href="Home.html"><img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/dd54206c-3edf-4ca1-8de5-612925be108f/%E1%84%90%E1%85%AE%E1%84%86%E1%85%A7%E1%86%BC_%E1%84%81%E1%85%AA%E1%86%AB%E1%84%8E%E1%85%A1%E1%86%AB_%E1%84%86%E1%85%AE%E1%84%87%E1%85%B5%E1%86%AB_%E1%84%85%E1%85%A9%E1%84%80%E1%85%A9_%E1%84%92%E1%85%AA%E1%84%8B%E1%85%B5%E1%84%90%E1%85%B3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220907%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220907T041546Z&X-Amz-Expires=86400&X-Amz-Signature=f66ddbdbb2c5358e8823d1396c8cacbd0607af7bbb5af0aa8e71a3a3cc319663&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25E1%2584%2590%25E1%2585%25AE%25E1%2584%2586%25E1%2585%25A7%25E1%2586%25BC_%25E1%2584%2581%25E1%2585%25AA%25E1%2586%25AB%25E1%2584%258E%25E1%2585%25A1%25E1%2586%25AB_%25E1%2584%2586%25E1%2585%25AE%25E1%2584%2587%25E1%2585%25B5%25E1%2586%25AB_%25E1%2584%2585%25E1%2585%25A9%25E1%2584%2580%25E1%2585%25A9_%25E1%2584%2592%25E1%2585%25AA%25E1%2584%258B%25E1%2585%25B5%25E1%2584%2590%25E1%2585%25B3.png%22&x-id=GetObject" alt="movin-logo"></a>
+        <div class="search">
+            <span class="material-symbols-outlined" style="color: black; padding: 7px;">search</span>
+            <p>이름/지역/관심사로 함께할 동료 검색</p>
+        </div>
+        <div class="icon">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="material-symbols-outlined">notifications</span>
+            <div class="profile"></div>
+        </div>
+    </div> 
+</div>
+
+<!-- banner -->
+<div class="banner">
+    <div class="container">
+        <div class="content">
+            <h1>모든 영상창작자를 위한 공간, 무빈</h1>
+            <h3>영상 트렌드, 동료 맺기, 구인/구직을 한 곳에서 !</h3>
+            <h3>폭넓은 인사이트와 생생한 경험을 동료들과 공유하세요</h3>
+            <button type="button">시작하기</button>
+        </div>
+        <div>
+            <img src="./images/banner-img.svg">
+        </div>
+    </div>
+</div>
+
+<!-- main -->
+<div class="main">
+    <!-- Left sidebar -->
+    <div>
+        <div class="leftsidebar">
+            <a>🎬  제작</a>
+            <a>📢  연출</a>
+            <a>🎥  촬영</a>
+            <a>💡  조명</a>
+            <a>🎙  음향</a>
+            <a>👨‍💻  후반</a>
+            <a>💄  분장</a>
+            <a>💃  의상</a>
+        </div>
+    </div> 
+    <!-- main content -->
+    <div class="main-content">
+        <!-- producer part -->
+        <div class="part">
+            <img src="./images/producer.svg">
+            <div>
+                <h2>제작</h2>
+                <h3>당신의 생각을 현실로 담아내기 위한 카메라 장인들</h3>  
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="filter">
+                <h3>신뢰도 높은 순</h3>
+            </div>
+            <div class="more">
+                <p>더보기</p>
+            </div>
+        </div>
+        <div class="jobbox">
+            <div class="feedbox">
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submenu">
+                <div class="filter">
+                    <h3>신규 순</h3>
+                </div>
+                <div class="more">
+                    <p>더보기</p>
+                </div>
+            </div>
+            <div class="feedbox">
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- director part -->
+        <div class="part">
+            <img src="./images/driector.svg">
+            <div>
+                <h2>연출</h2>
+                <h3>당신의 생각을 현실로 담아내기 위한 카메라 장인들</h3>  
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="filter">
+                <h3>신뢰도 높은 순</h3>
+            </div>
+            <div class="more">
+                <p>더보기</p>
+            </div>
+        </div>
+        <div class="jobbox">
+            <div class="feedbox">
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submenu">
+                <div class="filter">
+                    <h3>신규 순</h3>
+                </div>
+                <div class="more">
+                    <p>더보기</p>
+                </div>
+            </div>
+            <div class="feedbox">
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- photographer part -->
+        <div class="part">
+            <img src="./images/photographer.svg">
+            <div>
+                <h2>촬영</h2>
+                <h3>당신의 생각을 현실로 담아내기 위한 카메라 장인들</h3>  
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="filter">
+                <h3>신뢰도 높은 순</h3>
+            </div>
+            <div class="more">
+                <p>더보기</p>
+            </div>
+        </div>
+        <div class="jobbox">
+            <div class="feedbox">
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submenu">
+                <div class="filter">
+                    <h3>신규 순</h3>
+                </div>
+                <div class="more">
+                    <p>더보기</p>
+                </div>
+            </div>
+            <div class="feedbox">
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- light part -->
+        <div class="part">
+            <img src="./images/light.svg">
+            <div>
+                <h2>조명</h2>
+                <h3>당신의 생각을 현실로 담아내기 위한 카메라 장인들</h3>  
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="filter">
+                <h3>신뢰도 높은 순</h3>
+            </div>
+            <div class="more">
+                <p>더보기</p>
+            </div>
+        </div>
+        <div class="jobbox">
+            <div class="feedbox">
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submenu">
+                <div class="filter">
+                    <h3>신규 순</h3>
+                </div>
+                <div class="more">
+                    <p>더보기</p>
+                </div>
+            </div>
+            <div class="feedbox">
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- sound part -->
+        <div class="part">
+            <img src="./images/sound.svg">
+            <div>
+                <h2>음향</h2>
+                <h3>당신의 생각을 현실로 담아내기 위한 카메라 장인들</h3>  
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="filter">
+                <h3>신뢰도 높은 순</h3>
+            </div>
+            <div class="more">
+                <p>더보기</p>
+            </div>
+        </div>
+        <div class="jobbox">
+            <div class="feedbox">
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submenu">
+                <div class="filter">
+                    <h3>신규 순</h3>
+                </div>
+                <div class="more">
+                    <p>더보기</p>
+                </div>
+            </div>
+            <div class="feedbox">
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- post part -->
+        <div class="part">
+            <img src="./images/post.svg">
+            <div>
+                <h2>후반</h2>
+                <h3>당신의 생각을 현실로 담아내기 위한 카메라 장인들</h3>  
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="filter">
+                <h3>신뢰도 높은 순</h3>
+            </div>
+            <div class="more">
+                <p>더보기</p>
+            </div>
+        </div>
+        <div class="jobbox">
+            <div class="feedbox">
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submenu">
+                <div class="filter">
+                    <h3>신규 순</h3>
+                </div>
+                <div class="more">
+                    <p>더보기</p>
+                </div>
+            </div>
+            <div class="feedbox">
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- makeup part -->
+        <div class="part">
+            <img src="./images/makeup.svg">
+            <div>
+                <h2>분장</h2>
+                <h3>당신의 생각을 현실로 담아내기 위한 카메라 장인들</h3>  
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="filter">
+                <h3>신뢰도 높은 순</h3>
+            </div>
+            <div class="more">
+                <p>더보기</p>
+            </div>
+        </div>
+        <div class="jobbox">
+            <div class="feedbox">
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submenu">
+                <div class="filter">
+                    <h3>신규 순</h3>
+                </div>
+                <div class="more">
+                    <p>더보기</p>
+                </div>
+            </div>
+            <div class="feedbox">
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- style part -->
+        <div class="part">
+            <img src="./images/style.svg">
+            <div>
+                <h2>의상</h2>
+                <h3>당신의 생각을 현실로 담아내기 위한 카메라 장인들</h3>  
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="filter">
+                <h3>신뢰도 높은 순</h3>
+            </div>
+            <div class="more">
+                <p>더보기</p>
+            </div>
+        </div>
+        <div class="jobbox">
+            <div class="feedbox">
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submenu">
+                <div class="filter">
+                    <h3>신규 순</h3>
+                </div>
+                <div class="more">
+                    <p>더보기</p>
+                </div>
+            </div>
+            <div class="feedbox">
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed1">
+                    <img src="./images/image1.png">
+                    <div class="text">
+                        <h2>최송</h2>
+                        <div class="job">
+                            <p>Photographer</p>
+                            <p>@depenz</p>
+                        </div>
+                        <div class="feed-bottom">
+                            <div class="trust">
+                                <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                                <p>127명이 신뢰합니다</p>
+                                <span class="material-symbols-outlined feedsearch">search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Right sidebar -->
+    <div>
+        <div class="rightsidebar">
+            <h1>NOTICE</h1>
+            <h3>오프라인 미팅</h3>
+            <div class="dday">
+                <h1>D-29</h1>
+            </div>
+            <button type="button">참석하기</button>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <div class="footer-logo">
+        <img src="./images/movin_white(transparent).png"/>
+    </div>
+    <div class="footer-about">
+        <p>Email. tdyang82@depenz.com</p>
+        <p>Biz License 652-11-01591</p>
+    </div>
+</div>
+
+</body>
+</html>
