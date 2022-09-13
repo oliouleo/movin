@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,1,200" />
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<style>
+* {
+    font-family: 'TitilliumWeb';
+}
+.header {
+    display: flex;
+    height: 137px;
+    background-color: #141B4D;
+    border: #A7AABC;
+    border-style: solid;
+    border-width: 1px;
+}
+.topnav {
+    display: flex;
+    align-items: center;
+    height: 137px;
+    padding: 0px 42px 0px 42px;
+    width: 1440px;
+    margin: 0 auto;
+}
+.topnav img {
+    height: 55px;
+    width: 151px;
+    justify-content: flex-start;
+}
+.search {
+    display: flex;
+    background-color: #E2E3E9;
+    height: 49px;
+    width: 500px;
+    border-radius: 15px;
+    margin: 0 auto;
+    color: #141B4D;
+    font-family: 'TitilliumWeb';
+}
+.icon {
+    display: flex;
+    justify-content: flex-end;
+}
+.profile {
+    height: 41px;
+    width: 42px;
+    border-radius: 100%;
+    margin: 12.5px 12.5px;
+    background-color: #E2E3E9;
+}
+.material-symbols-outlined{
+    color: #E2E3E9;
+    font-size: 38px;
+    padding: 12.5px 12.5px;
+}
+/* profile toggle Start */
+.profile-toggle {
+    display: none;
+    position: absolute;
+    top: 110px;
+    right: 50px;
+    width: 154px;
+    height: 196px;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    padding: 30px;
+}
+.profile-toggle img {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.profile-toggle h2 {
+    font-weight: normal;
+    margin: 0px;
+}
+.profile-toggle a {
+    font-weight: normal;
+    margin: 0px;
+    font-size: 12px;
+}
+.profile-toggle-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.name-box {
+    margin-left: 15px;
+}
+.profile-toggle-middle p{
+    margin: 0px;
+    margin-top: 10px;
+}
+/* feed bottom > trust > icon Start */
+.feed-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trust {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #A580EA;
+}
+
+.trust img {
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+    color: #A580EA;
+}
+.trusticon {
+    color: #A580EA;
+    font-size: 19px;
+    margin: 0px;
+    margin-right: 2px;
+    padding: 0px;
+}
+
+.feedsearch {
+    color: #8A8DA6;
+    font-size: 25px;
+    margin: 0px;
+    margin-right: 2px;
+    padding: 0px;
+    margin-left: 30px;
+}
+/* feed bottom > trust > icon End */
+/* profile toggle End */
+</style>
+</head>
+<body>
+<div class="header">
+    <div class="topnav">
+            <a href="Home.html"><img src="../images/movin_white_logo.png" alt="logo"></a>
+        <div class="search">
+            <span class="material-symbols-outlined" style="color: black; padding: 7px;">search</span>
+            <p>이름/지역/관심사로 함께할 동료 검색</p>
+        </div>
+        <div class="icon">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="material-symbols-outlined">notifications</span>
+            <a href="#" class="profile" type="button" value="클릭" id="show" onClick="toggle()"></a>
+            <div class="profile-toggle" id="toggle">
+                <div class="profile-toggle-top">
+                    <div>
+                        <img src="../images/image1.png">
+                    </div>
+                    <div class="name-box">
+                        <h2>박소현</h2>
+                        <a href="#">본인인증 완료하기</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="profile-toggle-middle">
+                    <p>Movin profile</p>
+                    <p>나의 동료 리스트</p>
+                    <p>설정</p>
+                </div>
+                <hr>
+                <p>로그아웃</p>
+            <div>           
+        </div>
+    </div> 
+</div>
+</body>
+</html>
+<script>
+// Header Profile Toggle Onclick
+function toggle(){
+            if($('#toggle').css('display') == 'none'){
+            $('#toggle').show();
+        }else{
+            $('#toggle').hide();
+        }
+    }
+</script>
