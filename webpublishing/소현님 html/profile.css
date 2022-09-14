@@ -1,0 +1,64 @@
+.color-blue {
+  color: #002FD4;
+}
+
+.color-main {
+  color: #141B4D;
+}
+
+.color-light1 {
+  color: #8A8DA6;
+}
+
+.color-navy4 {
+  color: #6C7190;
+}
+
+.color-light3 {
+  color: #C4C6D3;
+}
+
+.color-light4{
+  color : #E2E3E9;
+}
+
+.my-div{
+  border : 1px #141B4D;
+  background-color: #141B4D;
+  height : 20px;
+  border-radius : 5px;
+  padding:10px
+  text-allign : center
+}
+
+
+.box1{
+
+  background: #141B4D;
+  text-align: center;
+  border: 1px solid #8A8DA6;box-sizing: border-box;
+  border-radius: 5px;
+  width: 63px;
+  height: 26px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  position : relative;
+  margin-left : 1000%;
+
+}
+
+.box-jobtag{
+  border: 1px color :#8A8DA6; 
+  width: 56px;
+  height: 24px;
+  border-radius : 10px; 
+  padding:10px;
+  display: inline-block;
+}
+
+<style>
+* {
+    font-family: 'TitilliumWeb';
+}
+

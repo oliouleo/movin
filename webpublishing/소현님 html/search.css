@@ -1,0 +1,32 @@
+.body {
+  text-align: center;
+}
+
+.search_box {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 15px;
+  width: 856.29px
+  height: 75.42px
+  display: inline-block;
+  margin-bottom: 80px;
+}
+
+.nearby {
+  display: inline-block;
+}
+
+.line {
+  margin-top: 30px;
+}
+
+.box {
+	width: 217px;
+	height: 186px;
+  border-radius: 15px;
+  background-color: #E2E3E9;
+  margin-right :20px;
+  box-shadow: 4px 4px 10px
+  rgba(0, 0, 0, 0.25);
+}

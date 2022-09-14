@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<style>
+* {
+    font-family: 'TitilliumWeb';
+}
+body {
+    margin: 0;
+}
+.container {
+    width: 856px;
+    height: 100%;
+    margin: 0 auto;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 856px;
+    height: 75px;
+    margin-top: 35px;
+    border: #000;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 1px;
+}
+.search-icon-big {
+    color: #000;
+}
+.search-box span {
+    font-size: 50px;
+    margin-left: 20px;
+}
+.search-box input {
+    width: 80%;
+    height: 80%;
+    border-width: 0px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+/* close button start */
+.sect01 {
+    position: relative;
+    width: 32px; /* X 사이즈 */
+    height: 32px; /* X 세로 중앙 */
+    margin: 0 auto; /* 가운데 정렬 */
+    float: right;
+    color: #FBFBFC;
+    cursor: hand;
+    margin-right: 40px;
+}
+
+.sect01 .line-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.sect01 .line-box > span {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+.sect01 .line-01 {
+    transform: rotate(135deg) translateX(0%);
+}
+
+.sect01 .line-02 {
+    transform: rotate(45deg) translateX(0%);
+}
+/* close button end */
+.feed1 {
+    width: 225px;
+    height: 330px;
+    border: #C4C6D3;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-right: 17px;
+    margin-top: 10px;
+}
+.feed1 h2 {
+    font-weight: normal;
+}
+.feed1 p {
+    margin: 0px;
+    margin-right: 3px;
+}
+.feed1 img {
+    width: 226px;
+    height: 226px;
+}
+.text {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.job {
+    display: flex;
+}
+.feedbox {
+    display: flex;
+}
+.jobbox{
+    margin-bottom: 40px;
+}
+.main-content {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 716px;
+    height: 100%;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+.main-content h2{
+    margin: 0px;
+}
+.main-content h3{
+    margin: 0px;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+</style>
+</head>
+<body>
+<!-- header -->
+<div id="headers"></div>
+
+<!-- Search Profile -->
+<div class="container">
+    <div class="search-box">
+        <span class="material-symbols-outlined search-icon-big" id="dis">search</span>
+        <input type="text" placeholder="부산시">
+        <div class="sect01">
+            <div class="line-box">
+                <span class="line-01"></span>
+                <span span class="line-02"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Profile list -->
+<!-- main -->
+<div class="main-content">
+    <div class="jobbox">
+        <div class="feedbox">
+            <div class="feed1">
+                <img src="../images/image1.png">
+                <div class="text">
+                    <h2>최송</h2>
+                    <div class="job">
+                        <p>Photographer</p>
+                        <p>@depenz</p>
+                    </div>
+                    <div class="feed-bottom">
+                        <div class="trust">
+                            <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                            <p>127명이 신뢰합니다</p>
+                            <span class="material-symbols-outlined feedsearch">search</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feed1">
+                <img src="../images/image1.png">
+                <div class="text">
+                    <h2>최송</h2>
+                    <div class="job">
+                        <p>Photographer</p>
+                        <p>@depenz</p>
+                    </div>
+                    <div class="feed-bottom">
+                        <div class="trust">
+                            <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                            <p>127명이 신뢰합니다</p>
+                            <span class="material-symbols-outlined feedsearch">search</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feed1">
+                <img src="../images/image1.png">
+                <div class="text">
+                    <h2>최송</h2>
+                    <div class="job">
+                        <p>Photographer</p>
+                        <p>@depenz</p>
+                    </div>
+                    <div class="feed-bottom">
+                        <div class="trust">
+                            <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                            <p>127명이 신뢰합니다</p>
+                            <span class="material-symbols-outlined feedsearch">search</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<div id="footers"></div>
+
+
+</body>
+
+<!-- include html script -->
+<script type="text/javascript">   
+    $(document).ready( function() {
+    
+    $("#headers").load("../html/header.html");
+    $("#footers").load("../html/footer.html");
+    
+    });
+</script>
+    
+    
+</html>

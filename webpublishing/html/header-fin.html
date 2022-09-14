@@ -8,6 +8,9 @@
 * {
     font-family: 'TitilliumWeb';
 }
+body {
+    margin: 0px;
+}
 .header {
     display: flex;
     height: 137px;
@@ -31,6 +34,7 @@
 }
 .search {
     display: flex;
+    align-items: center;
     background-color: #E2E3E9;
     height: 49px;
     width: 500px;
@@ -39,21 +43,38 @@
     color: #141B4D;
     font-family: 'TitilliumWeb';
 }
+.search input {
+    background-color: #E2E3E9;
+    width: 80%;
+    height: 80%;
+    border-width: 0px;
+    margin-left: 20px;
+    font-size: 18px;
+}
 .icon {
     display: flex;
     justify-content: flex-end;
 }
-.profile {
-    height: 41px;
-    width: 42px;
+.main-profile img {
+    width: 38px;
+    height: 38px;
     border-radius: 100%;
-    margin: 12.5px 12.5px;
+    margin: 7px;
+    cursor: pointer;
+}
+.profile {
+    width: 10px;
+    height: 10px;
+    font-size: 38px;
+    padding: 12.5px;
+    border-radius: 100%;
+    margin: 7px;
     background-color: #E2E3E9;
 }
-.material-symbols-outlined{
+.icon-basic {
     color: #E2E3E9;
     font-size: 38px;
-    padding: 12.5px 12.5px;
+    padding: 7px;
 }
 /* profile toggle Start */
 .profile-toggle {
@@ -62,10 +83,10 @@
     top: 110px;
     right: 50px;
     width: 154px;
-    height: 196px;
+    height: 200px;
     background-color: #F4F4F4;
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px;
 }
 .profile-toggle img {
     display: flex;
@@ -75,7 +96,7 @@
     height: 50px;
     border-radius: 100%;
 }
-.profile-toggle h2 {
+.profile-toggle h3 {
     font-weight: normal;
     margin: 0px;
 }
@@ -83,6 +104,7 @@
     font-weight: normal;
     margin: 0px;
     font-size: 12px;
+    text-decoration: none;
 }
 .profile-toggle-top {
     display: flex;
@@ -92,9 +114,12 @@
 .name-box {
     margin-left: 15px;
 }
-.profile-toggle-middle p{
+.profile-toggle-middle a{
+    display: block;
     margin: 0px;
     margin-top: 10px;
+    font-size: medium;
+    color: black;
 }
 /* feed bottom > trust > icon Start */
 .feed-bottom {
@@ -133,6 +158,7 @@
 }
 /* feed bottom > trust > icon End */
 /* profile toggle End */
+
 </style>
 </head>
 <body>
@@ -140,31 +166,35 @@
     <div class="topnav">
             <a href="Home.html"><img src="../images/movin_white_logo.png" alt="logo"></a>
         <div class="search">
-            <span class="material-symbols-outlined" style="color: black; padding: 7px;">search</span>
-            <p>이름/지역/관심사로 함께할 동료 검색</p>
+            <span class="material-symbols-outlined icon-basic" style="color: black;">search</span>
+            <input type="text" placeholder="이름/지역/관심사로 함께할 동료 검색">
         </div>
         <div class="icon">
-            <span class="material-symbols-outlined">chat</span>
-            <span class="material-symbols-outlined">notifications</span>
-            <a href="#" class="profile" type="button" value="클릭" id="show" onClick="toggle()"></a>
+            <span class="material-symbols-outlined icon-basic">chat</span>
+            <span class="material-symbols-outlined icon-basic">notifications</span>
+            <div class="main-profile">
+            <img onclick="toggle()" src="../images/image1.png">
+            </div>
+            <!-- <a href="#" class="profile" type="button" value="클릭" id="show" onClick="toggle()"></a> -->
             <div class="profile-toggle" id="toggle">
                 <div class="profile-toggle-top">
                     <div>
                         <img src="../images/image1.png">
                     </div>
                     <div class="name-box">
-                        <h2>박소현</h2>
+                        <h3>박소현</h3>
                         <a href="#">본인인증 완료하기</a>
                     </div>
                 </div>
                 <hr>
                 <div class="profile-toggle-middle">
-                    <p>Movin profile</p>
-                    <p>나의 동료 리스트</p>
-                    <p>설정</p>
+                    <a href="#">Movin profile</a>
+                    <a href="#">나의 동료 리스트</a>
+                    <a href="#">설정</a>
+                    <hr>
+                    <a href="#">로그아웃</a>
                 </div>
-                <hr>
-                <p>로그아웃</p>
+                
             <div>           
         </div>
     </div> 
