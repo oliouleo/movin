@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,1,200" />
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<style>
+* {
+    font-family: 'TitilliumWeb';
+}
+body {
+    margin: 0;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 500px;
+    width: 100%;
+}
+.main-content {
+    width: 620px;
+}
+.profile-update-bottom {
+    margin-bottom: 80px;
+}
+.profile-update-bottom-row {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.profile-update-bottom-row label {
+    width: 150px;
+}
+.profile-update-bottom-row img {
+    border-radius: 100%;
+    width: 162px;
+    height: 159px;
+}
+.profile-update-bottom-row-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+.profile-update-bottom-row input {
+    width: 273px;
+    height: 44px;
+}
+.profile-update-submit-btn {
+    display: flex;
+    justify-content: right;
+}
+.profile-update-submit-btn input{
+    width: 168px;
+    height: 57px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+</style>
+</head>
+<body>
+<!-- header -->
+<div id="headers"></div>
+
+<!-- main -->
+<div class="main">
+    <!-- main content -->
+    <form action="/action_page.php">
+        <div class="main-content">
+            <div class="profile-update-top">
+                <h3>기본 정보</h3>
+                <hr>
+            </div>
+            <div class="profile-update-bottom">
+                <div class="profile-update-bottom-row">
+                    <label for="profileimage" class="profile-update-bottom-row-title">프로필 사진</label>
+                    <img src="../images/image1.png">
+                </div>
+                <div class="profile-update-bottom-row">
+                    <label for="work" class="profile-update-bottom-row-title">업무분야</label>
+                    <input type="text">
+                </div>
+                <div class="profile-update-bottom-row">
+                    <label for="group" class="profile-update-bottom-row-title">소속(회사/학교)</label>
+                    <input type="text">
+                </div>
+                <div class="profile-update-bottom-row">
+                    <label for="status" class="profile-update-bottom-row-title">상태</label>
+                    <input type="text" placeholder="구직중, 구인중, 재직중">
+                </div>
+                <div class="profile-update-bottom-row">
+                    <label for="intro" class="profile-update-bottom-row-title">자기소개</label>
+                    <input type="text">
+                </div>
+                <div class="profile-update-bottom-row">
+                    <label for="interest" class="profile-update-bottom-row-title">관심분야</label>
+                    <input type="text">
+                </div>
+                <div class="profile-update-bottom-row">
+                    <label for="equipment" class="profile-update-bottom-row-title">보유 장비</label>
+                    <input type="textarea">
+                </div>
+            </div>
+            <div class="profile-update-top">
+                <h3>개인 정보</h3>
+                <hr>
+            </div>
+            <div class="profile-update-bottom">
+                <div class="profile-update-bottom-row">
+                    <label for="phone" class="profile-update-bottom-row-title">전화번호</label>
+                    <input type="text">
+                </div>
+                <div class="profile-update-bottom-row">
+                    <label for="livelocation" class="profile-update-bottom-row-title">거주지역</label>
+                    <input type="text">
+                </div>
+                <div class="profile-update-bottom-row">
+                    <label for="joblocation" class="profile-update-bottom-row-title">근무지역</label>
+                    <input type="text">
+                </div>
+                <div class="profile-update-bottom-row">
+                    <label for="birth" class="profile-update-bottom-row-title">생년월일</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="profile-update-top">
+                <h3>링크</h3>
+                <hr>
+            </div>
+            <div class="profile-update-bottom">
+                <div class="profile-update-bottom-row">
+                    <label for="portfolio" class="profile-update-bottom-row-title">포트폴리오</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="profile-update-top">
+                <h3>경력</h3>
+                <hr>
+            </div>
+            <div class="profile-update-bottom">
+                <div class="profile-update-bottom-row">
+                    <label for="career" class="profile-update-bottom-row-title">커리어</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="profile-update-submit-btn">
+            <input type="submit" value="프로필 저장">
+        </div>
+        </form>
+
+</div>
+<!-- footer -->
+<div id="footers"></div>
+
+</body>
+<!-- include html script -->
+<script type="text/javascript">   
+    $(document).ready( function() {
+    
+    $("#headers").load("../html/header-fin.html");
+    $("#footers").load("../html/footer-fin.html");
+    
+    });
+</script>
+    
+    
+</html>

@@ -19,23 +19,35 @@ body {
     width: 100%;
 }
 .main-content {
-    width: 820px;
+    width: 620px;
 }
-.profile-update-bottom-row {
-    display: flex;
+.profile-more-bottom {
+    margin-bottom: 80px;
+}
+.profile-more-bottom-row {
+    display: block;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.profile-update-bottom-row label {
-    width: 150px;
+.profile-more-about {
+    display: flex;
 }
-.profile-update-bottom-row img {
-    border-radius: 100%;
-    width: 162px;
-    height: 159px;
+.profile-more-about h1 {
+    margin: 0px;
 }
-.profile-update-bottom-row-title {
+.profile-more-top h3 {
+    margin: 0px;
+}
+.profile-more-bottom a {
+    float: right;
     font-size: 14px;
-    font-weight: bold;
+    color: #E2E3E9;
+    background-color: #141B4D;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
 }
 </style>
 </head>
@@ -47,27 +59,30 @@ body {
 <div class="main">
     <!-- main content -->
     <div class="main-content">
-        <div class="profile-update-top">
-            <h3>기본 정보</h3>
-            <hr>
+        <div class="profile-more-top">
+            <div class="profile-more-about">
+                <h1>박소현</h1>
+                <h1>(Doana)</h1>
+            </div>
+            <p>Director</p>
             <br>
+            <h3>Career</h3>
+            <hr>
         </div>
-        <div class="profile-update-bottom">
-            <form action="/action_page.php">
-                <div class="profile-update-bottom-row">
-                    <label class="profile-update-bottom-row-title">프로필 사진</label>
-                    <img src="../images/image1.png">
-                </div>
-            </form>
+        <div class="profile-more-bottom">
+            <div class="profile-more-bottom-row">
+                <p>디펜즈</p>
+                <p>디펜즈</p>
+                <p>디펜즈</p>
+            </div>
+            <a href="#">돌아가기</a>
         </div>
     </div>
 </div>
 <!-- footer -->
 <div id="footers"></div>
 
-
 </body>
-
 <!-- include html script -->
 <script type="text/javascript">   
     $(document).ready( function() {
