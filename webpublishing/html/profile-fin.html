@@ -25,8 +25,12 @@ body {
     display: flex;
     justify-content: center;
 }
+.profile-basic {
+    text-align: center;
+}
 .profile-img {
     border-radius: 100%;
+    margin: 0px;
 }
 .profile-name {
     display: flex;
@@ -35,6 +39,7 @@ body {
 .profile-trust {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .profile-trust-icon {
     color: #BC9FEF;
@@ -167,6 +172,20 @@ body {
 .profile-portfolio a {
     margin-left: 30px;
 }
+.profile-main-button button {
+    display: block;
+    width: 100%;
+    height: 34px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px #8A8DA6;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+}
+.main-button1 {
+    background-color: #141B4D;
+    color: #E2E3E9;
+}
 </style>
 </head>
 <body>
@@ -195,11 +214,19 @@ body {
                     <p>Director</p>
                     <p>@depenz</p>
                 </div>
-                <hr>
+                <div class="profile-main-button">
+                    <button type="button" class="main-button1">동료 인증 하기</button>
+                    <button type="button" class="main-button2">동료 인증 취소</button>
+                    <button type="button" class="main-button2">프로필 수정</button>
+                </div>
+                <!-- backlog start -->
+                <!-- email & phone number -->
+                <!-- <hr>
                 <div class="profile-contact">
                     <p>tdyang82@gmail.com</p>
                     <p>010-4842-0340</p>
-                </div>
+                </div> -->
+                <!-- backlog end -->
                 <div class="profile-status">
                     <div class="profile-status-tag-1">
                         <span>구직중</span>
