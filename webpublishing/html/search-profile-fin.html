@@ -171,6 +171,14 @@ body {
     margin-left: 10px;
     cursor: pointer;
 }
+/* gird system */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.grid-item {
+}
 </style>
 </head>
 <body>
@@ -203,8 +211,8 @@ body {
 </div>
 <div class="main-content">
     <div class="jobbox">
-        <div class="feedbox">
-            <div class="feed1">
+        <div class="feedbox grid-container">
+            <div class="feed1 grid-item">
                 <img src="../images/image1.png">
                 <div class="text">
                     <h2>최송</h2>
@@ -221,7 +229,7 @@ body {
                     </div>
                 </div>
             </div>
-            <div class="feed1">
+            <div class="feed1 grid-item">
                 <img src="../images/image1.png">
                 <div class="text">
                     <h2>최송</h2>
@@ -238,7 +246,24 @@ body {
                     </div>
                 </div>
             </div>
-            <div class="feed1">
+            <div class="feed1 grid-item">
+                <img src="../images/image1.png">
+                <div class="text">
+                    <h2>최송</h2>
+                    <div class="job">
+                        <p>Photographer</p>
+                        <p>@depenz</p>
+                    </div>
+                    <div class="feed-bottom">
+                        <div class="trust">
+                            <span class="material-symbols-outlined trusticon">how_to_reg</span>
+                            <p>127명이 신뢰합니다</p>
+                            <span class="material-symbols-outlined feedsearch">search</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feed1 grid-item">
                 <img src="../images/image1.png">
                 <div class="text">
                     <h2>최송</h2>
